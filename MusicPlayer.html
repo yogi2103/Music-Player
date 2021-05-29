@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="MusicPlayer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<div id="body-header">
+		<nav>
+			<div id="gaana-logo">
+				<img src="Images\gaana.png">
+			</div>
+			<div class="horizontal-list">
+				<ul id="red-link">
+					<li><a href="#Home">HOME</a></li>
+					<li><a href="#Browse">BROWSE</a></li>
+					<li><a href="#Discover">DISCOVER</a></li>
+					<li><a href="#Radio">RADIO</a></li>
+					<li><a href="#My music">MY MUSIC</a></li>
+					<li><a href="#Podcasts">PODCASTS</a></li>
+					<li><a href="#India's Music">INDIA'S MUSIC</a></li>
+				</ul>
+			</div>
+			<div id="Search-bar">
+				<input type="text" name="searching-bar" required placeholder="Search for Songs, Artists and More">
+				<div id="search-icon">
+				<a href="#search"><i class="fas fa-search"></i></a>
+				</div>
+			</div>
+			<a href="#changemode"><div id="innerdiv">
+            </div>
+            </a>
+			<a href="#gaana-plus"><div id="gaana-plus">
+				<p>GET GAANA PLUS</p>
+			</div>
+		</a>
+		<div id="profile">
+		<a href="#profile-image"><img src="Images\85021197_1615812775250493_2697634929591713792_o.jpg"></a>
+		</div>
+		</nav>	
+	</div>
+	<main>
+		<section id="Trending">
+			<div id="Song-list">
+				<ul class="horizontal-list">
+					<li><a href="#Hindi">Hindi</a></li>
+					<li><a href="#English">English</a></li>
+					<li><a href="#Tamil">Tamil</a></li>
+					<li><a href="#Telugu">Telugu</a></li>
+					<li><a href="#Punjabi">Punjabi</a></li>
+					<li><a href="#Marathi">Marathi</a></li>
+					<li><a href="#Gujrati">Gujrati</a></li>
+					<li><a href="#Bengali">Bengali</a></li>
+					<li><a href="#Kannada">Kannada</a></li>
+					<li><a href="#Bhojpuri">Bhojpuri</a></li>
+					<li><a href="#Malyalam">Malyalam</a></li>
+					<li><a href="#Urdu">Urdu</a></li>
+					<li><a href="#Haryanavi">Haryanavi</a></li>
+					<li><a href="#Rajasthani">Rajasthani</a></li>
+					<li><a href="#Odia">Odia</a></li>
+					<li><a href="#Assamese">Assamese</a></li>
+				</ul>
+			</div>
+			<div id="Trending-list">
+				<div id="Trending-image">
+					<img src="Images\hungama-tv-ad-song.png">
+				</div>
+				<div id="Text">
+					<p>Radio</p>
+					<p>Pick a mood,song,or artist.</p>
+					<p>We'll play the perfect mix!</p>
+				</div>
+				<div id="Singer-playlist">
+					<div class="horizontal-list">
+						<ul>
+							<li id="Arijit-singh"><a href="#ArijitSingh"><img src="Images\Arijit.jpg"></a><p>Arijit Singh</p></li>
+							<li><a href="#ArmaanMalik"><img src="Images\arman.webp"></a><p>Armaan Malik</p></li>
+							<li><a href="#DivyaBhanushali"><img src="Images\divya.jpg"></a><p>Divya Bhanushali</p></li>
+							<li><a href="#SonuNigam"><img src="Images\image.jpg"></a><p>Sonu Nigam</p></li>
+							<li><a href="#ShreyaGhosal"><img src="Images\shreya.webp"></a><p>Shreya Ghoshal</p></li>
+							<li><a href="#Shaan"><img src="Images\shaan.jpg"></a><p>Shaan</p></li>
+					</ul>
+					</div>
+					<a href="#morestation">
+						<div id="Station">
+							<p>MORE STATIONS</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div id="all-songs">
+			<div id="Weekly-top">
+				<div id="Weekly-heading">
+				<h3> Weekly Top Songs
+					<a href="#play-all"><button>Play All</button></a>
+				</h3>
+			</div>
+				<div id="playlist">
+			<ol>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:-10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Teri Mitti</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kesari</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Laal Ishq</span>
+						<span style=" position:absolute; right: -10px;"><i  class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Ram Leela</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Phir Mohabbat</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Jannat2</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Lag Jaa Gale</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Woh Kaun Hai?</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+						<div class="About-song-list">
+						<span>Masakali 2.0</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Masakali 2.0</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one><div class="About-song-list">
+						<span>Hawaayein</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Harry Met Sejal</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Tu Pehla Pehla Pyaar</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabir Singh</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Humnava</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Hamari Adhuri Kahani</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Badtameez Dil</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Yeh Jawaani Hai Deewani</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ude Dil Befikre</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Befikre</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Aankh Mare</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Simmba</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Tu Nazm Nazm</span>
+						<span style=" position:absolute; right: -10px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Bareily Ki Barfi</p>
+					</div>
+				</a>
+			</li>
+			</ol>
+		</div>
+	</div>
+	<div style="position: relative;" id="check1">
+	<div style="position: relative;" class="album-name">
+		<div style="margin-left: 20px;" id="Trending-albums">
+		<span><h2>Trending Albums</h2></span>
+		<ul style="margin-left: -40px;" class="horizontal-list">
+		<li>
+			<a href="#album-one"><img src="Images\Album-image\Tere-Bina-Hindi-2020-20200511121222-150x150.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Tere Bina</span><br>
+				<span>2020 | Hindi</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img src="Images\Album-image\Nai-Chaida-Hindi-2020-20200426000055-150x150.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Nai Chaida</span><br>
+				<span>2020 | Hindi</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img src="Images\Album-image\Tere-Naal-Hindi-2020-20200518044001-150x150.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Tere Naal</span><br>
+				<span>2020 | Hindi</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img src="Images\Album-image\Bheegi-Bheegi-Hindi-2020-20200510234001-150x150.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Bheegi Bheegi</span><br>
+				<span>2020 | Hindi</span>
+			</div></a>
+		</li>
+		<br>
+		<li>
+			<a href="#album-one"><img src="Images\Album-image\GendaPhool.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Genda Phool</span><br>
+				<span>2020 | Hindi</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img src="Images\Album-image\Aaj-Bhi-Hindi-2020-20200407000137-150x150.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Aaj Bhi</span><br>
+				<span>2020 | Hindi</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img src="Images\Album-image\Kuch-Tum-Kaho-Hindi-2020-20200519210541-150x150.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Kuch Tum Kaho</span><br>
+				<span>2020 | Hindi</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img src="Images\Album-image\Bewafai-Hindi-2020-20200419234001-150x150.jpg">
+			<i class="far fa-play-circle"></i>				
+			<div class="about-album">
+				<span>Bewafai</span><br>
+				<span>2020 | Hindi</span>
+			</div></a>
+		</li>
+	</ul>
+</div>
+	<div style="margin-left:20px;" class="album-name">
+		<h2>Featured Playlist</h2>
+		<ul style="margin-left: -40px;" class="horizontal-list">
+		<li>
+			<a href="#album-one"><img style="height: 100px;" src="Images\Album-image\Featured list\LyricallyMast_20200429103800_150x150.jpg">
+			<div class="about-album" style="background-color:transparent;">
+				<span>Lyrically Mast</span><br>
+				<span style="color:grey;">25 Songs</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height: 100px;" src="Images\Album-image\Featured list\AkshayKumarTheBoss_20200127173137_150x150.jpg">
+			<div class="about-album" style="background-color:transparent;">
+				<span>Lyrically Mast</span><br>
+				<span style="color:grey;">35 Songs</span>
+			</div></a>
+		</li>
+		<br>
+		<li>
+			<a href="#album-one"><img style="height: 100px;" src="Images\Album-image\Featured list\DecadeofMusicDirectors_201019_20191130043011_150x150.jpg">
+			<div class="about-album" style="background-color:transparent;">
+				<span>Lyrically Mast</span><br>
+				<span style="color:grey;">75 Songs</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height: 100px;" src="Images\Album-image\Featured list\NonStopPartyMix_20200302010642_150x150.jpg">
+			<div class="about-album" style="background-color:transparent;">
+				<span>Lyrically Mast</span><br>
+				<span style="color:grey;">135 Songs</span>
+			</div></a>
+		</li>
+		<br>
+		<li>
+			<a href="#album-one"><img style="height: 100px;" src="Images\Album-image\Featured list\ThrowbackThursdaysHindi_20200513165827_150x150.jpg">
+			<div class="about-album" style="background-color:transparent;">
+				<span>Lyrically Mast</span><br>
+				<span style="color:grey;">225 Songs</span>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height: 100px;" src="Images\Album-image\Featured list\hindi-cluster_29_20191103132729_150x150.jpg">
+			<div class="about-album" style="background-color:transparent;">
+				<span>Lyrically Mast</span><br>
+				<span style="color:grey;">59 Songs</span>
+			</div></a>
+		</li>
+	</ul>
+	</div>
+	<span><h2 style="margin-top: -40px;">Shows & Podcasts</h2></span>
+	<ul style="margin-left: -40px;" class="horizontal-list">
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\Radio-1.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Love and Relations</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\Radio-2.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Masti time</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\Radio-3.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Home Remedies</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\Radio-4.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Balgaatha</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\Radio-5.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>KahaniBaaz</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\Radio-6.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Mirchi Murga</span><br>
+			</div></a>
+		</li>
+	</ul>
+	<span><h2>Popular in Punjabi</h2></span>
+	<ul style="margin-left: -40px;" class="horizontal-list">
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\crop_175x175_1532438586.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Ishare Tere</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\crop_175x175_1540031665_2249968.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Shakhiyaan</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\crop_175x175_1539255907.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Nikle Current</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\crop_175x175_1563364493.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Rabb Wangu</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\crop_175x175_1565679925.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Lehanga</span><br>
+			</div></a>
+		</li>
+		<li>
+			<a href="#album-one"><img style="height:150px;" src="Images\Album-image\crop_175x175_1529575116.jpg">
+			<i class="far fa-play-circle"></i>
+			<div class="about-album">
+				<span>Prada</span><br>
+			</div></a>
+		</li>
+	</ul>
+</div>
+ <div style="position: absolute; top:0; visibility: hidden;" id="single-playlist">
+ 		<div id="Singer-image">
+ 			<img style="display: inline-block;" src="Images\1639875-ARJITSINGHcopy-1519126411.jpg">
+    	</div>
+    	<div id="Go-Back">
+    		<a href="#go-back"><h3>Go Back</h3></a>
+    	</div>
+    	<div id="about-singer">
+    		<p>Arijit Singh (born 25 April 1987) is an Indian playback singer.He sings predominantly in Hindi and Bengali but has also performed in various other Indian languages.Singh began his career when he participated in the contemporary reality show, Fame Gurukul in 2005, and was discovered by filmmaker Sanjay Leela Bhansali and Kumar Taurani.
+    		</p>
+    		<p>
+			 At the start of his singing career, he received nominations for the Upcoming Male Vocalist of the Year award at the 2013 Mirchi Music Awards for renditions of "Phir Le Aya Dil" and "Duaa", winning the award for the latter.Singh received widespread recognition with the release of "Tum Hi Ho" and "Chahun Main Ya Naa" in 2013.Singh was declared the most-streamed Indian artist of the year 2019 by Spotify.</p>
+    </div>
+    <div id="playlist">
+			<ol>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+			<li>
+					<a href=#song-one>
+					<div class="About-song-list">
+						<span>Ae Kash Ke Hum</span>
+						<span style=" position:absolute; right:20px;"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i onclick="showhide('1')" id="btn" class="fas fa-ellipsis-h"></i></span>
+						<div  id="1" class="playlist-box">
+						<span class="info"> <i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"> <i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"> <i class="fas fa-info-circle"></i></span >Info
+						</div>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+				</a>
+			</li>
+		</ol>
+	</div> 
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+	<div style="position: fixed;bottom:0; width: 100%;" id="container">
+	<div style="position: relative;"id="music-bar">
+	<div id="music-info" style="display: inline-block; vertical-align: top;">
+	<a href=#song-one>
+					<div class="single-list-image">
+						<img src="Images\Song-playlist\kabhi haa kabhi naa.jpg">
+					</div>
+					<div class="About-song-list" class="horizontal-list">
+						<span>Ae Kash Ke Hum</span>
+						<p>Kabhi Haan Kabhi Naa</p>
+					</div>
+	</a>
+	</div>
+	<div style="position: relative;" id="icon">
+	<a href="#icon"><i class="fas fa-step-backward"></i></a>
+	<a href="#icon"><i class="fas fa-play-circle" style="position:relative; visibility:visible;"></i></a>
+	<a href="#icon"><i class="fas fa-pause-circle" style="position: absolute; margin-left:-37px; visibility: hidden;"></i></a>
+	<a href="#icon"><i class="fas fa-step-forward"></i></a>
+	</div>
+	<a href="#icon"><i class="fas fa-redo-alt"></i></a>&nbsp;&nbsp;
+	<span>00:57</span>
+	<div style="margin-left: 20px;" id="progress-bar">
+		<a href="#icon"><div id="circle">
+		</div></a> 
+	</div>
+	<a href="#icon"><i class="fas fa-random"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#icon"><i class="fas fa-volume-up"></i></a>&nbsp;&nbsp;
+	<a href="#icon"><i class="fas fa-cog"></i></a>
+	<audio id="music-playing" style="visibility:hidden;" controls>
+		<source src="Songs\Ae-Kaash-Ke-Hum-Kumar-Sanu.mp3" type="audio/mp3">
+	</audio>
+</div>
+</div>
+</footer>
+	</main>
+	<script type="text/javascript" src="MusicPlayer.js">
+        </script>
+</body>
+</html>

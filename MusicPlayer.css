@@ -1,0 +1,408 @@
+body{
+	margin: 0px;
+	overflow: auto;
+}
+
+#body-header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;							 /*for the body-header*/
+	height: 70px;
+	border-bottom: 2px solid #EFEFEF;
+	margin: auto;
+}
+
+#gaana-logo img{						/*for logo image*/				
+	height: 60px;
+}
+
+.horizontal-list li{                      /*for the list present as hyperlink*/
+	list-style: none;
+	display: inline-block;
+}
+
+#gaana-logo{							  /*for the logo in nav-bar*/
+	display: inline-block;
+	vertical-align: bottom;
+}	
+
+.horizontal-list{						  /*for the horizontal-list as div box*/							
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+a{											/*for all the hyperlinks present*/
+	text-decoration: none;
+	color: grey;
+	margin-right: 0.4rem;
+	letter-spacing: 0.05rem;
+}
+
+a:hover{							/*for links color to be changed to #E72C30*/
+	color: #E72C30;
+}
+
+#Search-bar{						/*for the search box as div-box*/
+	/*height: 30px;
+	width: 250px;*/
+	display: flex;
+	flex-wrap: wrap;
+	width: 280px;
+	background-color: #EFEFEF;
+	border-radius: 10px 10px 10px 10px;
+	display: inline-block;
+	vertical-align: bottom;
+	position: relative;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+#Search-bar input{							/*for input box in search-bar*/
+	width: 80%;
+	border-radius: 10px 10px 10px 10px;
+	border: transparent;
+	outline: none;
+	margin-left: 10px;
+	line-height: 1.7rem;
+	background-color: #EFEFEF;
+}
+
+#search-icon{								/*for the search icon*/
+	display: inline;
+}
+
+#innerdiv{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-image:url('Sun (2).jpg'); 
+	background-size: contain;
+	margin-bottom: 5px;
+}
+
+#gaana-plus{								/*for the gaana plus icon as a div-box*/
+	border: 1.2px solid #E72C30;
+	border-radius: 10px 10px 10px 10px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+
+#gaana-plus p{								/*for the text present in gaana-plus icon*/
+	font-size: 0.7rem;
+	color: #E72C30;
+	margin: 10px;
+}
+
+#gaana-plus:hover{							/*for changin color of gaana-plus div box to red on hover*/
+	background-color: #E72C30;
+}
+
+#gaana-plus:hover p{						/*for changing the color of text on hovering*/
+	color: white;
+}
+
+#profile{								/*for profile pic as div-box*/
+display: inline-block;
+}
+
+#profile img{								/*for the profile pic*/
+	border-radius: 50%;
+	height: 50px;
+}
+
+#Song-list{									/*for list of songs in different language as div-box*/
+	border-bottom: 2px solid #EFEFEF;
+	margin-bottom: 10px;
+}
+
+#Song-list ul li{							/*for songs genre in list*/ 
+	margin-right: 10px;
+}
+#Trending{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#Trending-list{								/*div box for the singers*/
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
+	margin: auto;
+	/*justify-content: space-between;*/
+	background-color: #3E3E3E;
+}
+#Trending-image img{							/*for image of the singers*/
+	margin-top: 10px;
+	margin-left: 0.2rem;
+	height: 100px;
+	border-radius: 10px 10px 10px 10px;
+}
+#Text{									/*for the text written in front of the Singer-playlist*/
+	margin-left: 10px;
+}
+#Text p{								/*for the color of text*/
+	color: lightgreen;
+}
+.horizontal-list ul li a img{			/*for image of singers as a list*/
+	height: 70px;
+	border-radius:50%;
+	margin-right: 1.5rem;
+}
+#Singer-playlist p{						/*for name of singers*/
+	text-align: center;
+	color: white;
+}
+#Station{									/*for the more-station as div-box*/
+	height: auto;
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+	margin-top: 30px;
+	border: 1px solid #EFEFEF;
+	border-radius: 20px 20px 20px 20px;
+}
+#Station p{										/*for the text present in more station box*/
+	line-height: 1px;
+	font-size: 0.6rem;
+	padding: 0.5rem;
+}
+#Weekly-top{
+	display: inline-block;
+	margin-left:1vw;
+	width: 18vw;
+	vertical-align: top;
+	position: relative;										/*for div box containing single playlist*/
+	
+}
+#Weekly-top li{										/*For the list used in weekly-top*/
+	margin-bottom: 1.2rem;
+}
+#heading{												/*For the heading used in Weekly-top*/
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: center;
+}
+#Weekly-heading button{									/*For the button in Weekly-top*/
+	width: 80px;
+	height: 20px;
+	border-radius: 10px 10px 10px 10px;
+	outline: none;
+	border: none;
+	background-color: grey;
+}
+#Weekly-heading:hover button{					/*For the Play-button on Weekly-top*/
+	background-color: #E72C30;
+}
+#playlist{										/*For the div box containing all songs in Weekly top*/
+	display: flex;
+	flex-wrap: wrap;
+}
+.About-song-list{							/*About-song list in Weekly top songs as div box*/
+	display: inline-block;
+	vertical-align: top;
+	line-height: 0.7rem;
+}
+#playlist li:hover{
+	padding: 5px;
+	background-color: grey;
+}
+.About-song-list span{						/*For span used in Weekly-top songs*/
+	font-weight: bold;
+}
+.About-song-list p{							/*About the Weekly top songs paragraph*/
+	color: grey;
+	font-size: 0.8rem;
+}
+.ellipse-icon{								/*For the ellipsis icon*/
+	display: inline-block;
+	vertical-align: top;
+}
+#playlist a{								/*For the Hyperlink in Weekly-top songs*/
+	color: black;
+}
+#playlist ol li{							/*For the playlist in Weekly-top songs*/
+	margin-left: -20px;
+}
+.playlist-box{								/*Playlist box on ellipsis icon gives info */
+	position: absolute;
+	right: 50px;
+	width: 120px;
+	height: 100px;
+	background-color: grey;
+	position: absolute; 
+	border-radius: 10px 10px 10px 10px;
+	display: none;
+}
+.info									/*For information of ellipsis icons*/
+{
+	color:black;
+	margin-left: 4px;
+	margin-right: 15px;
+	font-size: 16px;
+}
+
+.album-name{								/*Album name used as div-box*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 2.3rem;
+	display: inline-block;
+	vertical-align: top;
+}
+.album-name ul li img{					/*Images used in the album*/
+	position: relative;
+	height: 150px;
+	border-radius: 8px 8px 0px 0px;
+}
+.album-name ul li i{				/*For the play icons used over albums*/
+	color: grey;
+	margin-top: 3rem;
+	margin-left: -5rem;
+	font-size: 3rem;
+	position: absolute;
+	visibility: hidden;
+}
+.album-name ul li:hover i{					/*On hovering on album play icon should be visible*/
+	visibility: visible;
+}
+.album-name ul li i:hover{							/*On hovering Play icons color change*/
+	color: white;
+}
+.about-album{									/*Album-description*/
+	margin-top: -5px;
+	color: black;
+	background-color: grey;
+	border-radius: 5px 5px 5px 5px;
+	text-align: center;
+}
+#all-songs{									/*containing all albums and songs in one div-box*/
+	display: flex;
+	flex-wrap: wrap;
+}
+.album-name ul li{							/*list of albums*/
+	margin-right: 20px;
+}
+.album-name ul li:hover{					/*On hovering effect on albums*/
+	transition: 0.1s ease-in-out;
+	transform: scale(1.1);
+}
+#Trending-albums{									/*Trending-albums as div box containing all albums*/
+	display: inline-block;
+	vertical-align: top;
+}
+#Featured-list{										/*Featured list as div box*/
+	position: relative;
+	margin-left: 50px;
+	/*display: inline-block;*/
+}
+#Podcasts{										/*For podcasts as divbox*/
+	margin:auto;
+	display:inline-block;
+}
+
+						/**************For the bottom-music Player**************/
+
+
+#music-bar{											/*div box as music-bar*/
+	padding: 10px;
+	background-color: #21242E;
+	color: white;
+}
+#icon{											/*icons used in music-player*/
+	text-align:middle;
+	font-size: 1.5rem;
+	display: inline-block;
+}
+audio{											/*for the audio used*/
+	vertical-align: top;
+	bottom: 0px;
+	width: 10px;
+}
+.single-list-image img{							/*For the music used used in music player */
+	height: 50px;
+	background-size: cover;
+	border-radius: 10px 10px 10px 10px;
+}
+.single-list-image{
+	display: inline-block;
+}
+#progress-bar{									/*music player progress-bar*/
+	/*position: absolute ;
+	top:20px;*/
+	vertical-align: middle;
+	display: inline-block;
+	width: 800px;
+	height: 3px;
+	border-radius: 10px 10px 10px 10px;
+	background-image: linear-gradient(to right,red,grey 40%);
+}
+#circle{										/*for the slider icon on music bar*/
+	height: 10px;
+	width: 10px;
+	margin-left: 200px;
+	border-radius: 50%;
+	background-color: white;
+	position:absolute;
+	top:22px;
+}
+
+						/***********For Single-playlist-screen***********/
+
+
+
+#single-playlist{                /*div box for single-playlist screen*/
+	width: 96.2%;
+	background-color: #3E3E3E;
+	margin-left: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+#single-playlist ol{
+	margin-left: 10px;
+
+}
+
+#Go-Back{
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+	right: 0;
+	border:2px solid black;
+	height:20px;
+	background-color: yellow;
+}
+#Go-Back h3{
+	margin:auto;
+}
+
+#check1{						/*for containing divi box parallel to weekly-top*/
+	width: auto;
+	display: inline-block;
+	flex-wrap: wrap;
+}
+#about-singer p{				/*for paragraph about-singer*/
+	color: white;
+    font-weight: 600;
+}
+#Singer-image{						/*For the Singer image*/
+	display: inline-block;
+	vertical-align: top;
+}
+#about-singer{						/*div box for about-singer*/
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: auto;
+	font-size: 1.1rem;
+	line-height: 25px;
+	padding: 5px;
+	text-align: justify;
+	display: inline-block;
+}
+#single-playlist img{						/*for image of singer in single-playlist-screen*/
+	margin-left: 10px;
+	height: 150px;
+	border-radius:10px 10px 10px 10px;
+}
